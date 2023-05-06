@@ -8,7 +8,7 @@ export default async (req, res) => {
            .collection("tasks")
            .find({})
            .toArray();
-      res.json(movies);
+      res.json(tasks);
    } catch (e) {
        console.error(e);
    }
